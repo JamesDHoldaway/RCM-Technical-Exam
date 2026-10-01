@@ -10,4 +10,8 @@ for course in offerings:
 
 exam = input(f"\nWhich technical exam would {student} like to take? ")
 
+while exam not in offerings:
+    print("Exam doesn't match offerings")
+    exam = input("Please try again: ")
+
 print(f"\nLet's begin {offerings[exam]["name"]}")
