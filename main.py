@@ -14,4 +14,10 @@ while exam not in offerings:
     print("Exam doesn't match offerings")
     exam = input("Please try again: ")
 
-print(f"\nLet's begin {offerings[exam]["name"]}")
+print(f"\nLet's begin {offerings[exam]["name"]}\nThis exam contains {len(offerings[exam]["sections"])} section(s):\n")
+
+num = 1
+
+for section in offerings[exam]["sections"]:
+    print(f"{num}. {section} - {len(offerings[exam]["sections"][section]["items"])} items")
+    num = num + 1
