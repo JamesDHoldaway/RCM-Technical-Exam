@@ -1,12 +1,13 @@
 from standards import offerings
 
-print("Hello instructor! Thanks for using this project to assess your student's readiness for their RCM examination. ")
+print("Hello instructor! \nThanks for using this project to assess your student's readiness for their RCM examination. ")
 
-student = input("Before we begin who is being assessed today? (don't worry all of their data is stored locally on your computer) ")
+student = input("\nBefore we begin who is being assessed today? (data is not stored): ")
 
+print("\nExam Offerings")
 for course in offerings:
-    print(course)
+    print(f"- {course}: {offerings[course]["name"]}")
 
-exam = input(f"Which technical exam would {student} like to take? ")
+exam = input(f"\nWhich technical exam would {student} like to take? ")
 
-print(f"Lets do it here is {exam}!!")
+print(f"\nLet's begin {offerings[exam]["name"]}")
