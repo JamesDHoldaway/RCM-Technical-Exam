@@ -21,3 +21,8 @@ num = 1
 for section in offerings[exam]["sections"]:
     print(f"{num}. {section} - {len(offerings[exam]["sections"][section]["items"])} items")
     num = num + 1
+
+ready = input(f"\nType READY when you are ready to begin with section 1: {list(offerings[exam]["sections"])[0]} ")
+
+while ready != "READY":
+    ready = input("Answer not accepted try again ")
