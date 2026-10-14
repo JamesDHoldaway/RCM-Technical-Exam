@@ -26,3 +26,26 @@ ready = input(f"\nType READY when you are ready to begin with section 1: {list(o
 
 while ready != "READY":
     ready = input("Answer not accepted try again ")
+
+num = 1
+total = 0 
+
+for section in offerings[exam]["sections"]:
+    current = offerings[exam]["sections"][section]
+    print(f"{num}/{len(offerings[exam]["sections"])} - {section}")
+    num = num +1
+    section_total = 0
+    for item in current["items"]:
+        print(item, " - Section Score: ", section_total, " Total Score: ", total)
+        while True:
+            try:
+                score = input("Score 0-5 entered as a number: ")
+                score = int(score)
+                if score > 5 or score < 0:
+                    print("Invalid score! Try again ")
+                    continue
+                section_total = section_total + current["Weight"]*score/5
+                break
+            except ValueError:
+                print(f"Please enter a valid score 0-5 for {item}: ")
+    total = total + section_total
