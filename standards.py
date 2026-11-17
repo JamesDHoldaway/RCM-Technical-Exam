@@ -10,8 +10,8 @@ offerings = {
     "CG1": {
         "name" : "Level 1 Classical Guitar",
         "sections": {
-            "Diatonic Scales": {"Weight": 0.50, "items": ["G Major (Two-Octaves)", "E Harmonic Minor (Two-Octaves)", "E Melodic Minor (Two-Octaves), D Major (One-Octave), B Harmonic Minor (One-Octave), B Melodic Minor (One-Octave), F Major (One-Octave), D Harmonic Minor (One-Octave), D Melodic Minor (One-Octave)"]},
-            "Tremolando Scales": {"Weight": 0.50, "items": ["G Major (Two-Octaves)", "E Harmonic Minor (Two-Octaves)", "E Melodic Minor (Two-Octaves), D Major (One-Octave), B Harmonic Minor (One-Octave), B Melodic Minor (One-Octave), F Major (One-Octave), D Harmonic Minor (One-Octave), D Melodic Minor (One-Octave)"]},
+            "Diatonic Scales": {"Weight": 0.50, "items": ["G Major (Two-Octaves)", "E Harmonic Minor (Two-Octaves)", "E Melodic Minor (Two-Octaves)", "D Major (One-Octave)", "B Harmonic Minor (One-Octave)", "B Melodic Minor (One-Octave)", "F Major (One-Octave)", "D Harmonic Minor (One-Octave)", "D Melodic Minor (One-Octave)"]},
+            "Tremolando Scales": {"Weight": 0.50, "items": ["G Major (Two-Octaves)", "E Harmonic Minor (Two-Octaves)", "E Melodic Minor (Two-Octaves)", "D Major (One-Octave)", "B Harmonic Minor (One-Octave)", "B Melodic Minor (One-Octave)", "F Major (One-Octave)", "D Harmonic Minor (One-Octave)", "D Melodic Minor (One-Octave)"]},
             "Chromatic Scales": {"Weight": 0.50, "items": ["Starting on D (One-Octave)"]},
             "Arpeggio Patterns": {"Weight": 0.50, "items": ["P-M-I", "P-I-M", "P-A-I", "P-I-A", "P-I-M-A"]}
         }
